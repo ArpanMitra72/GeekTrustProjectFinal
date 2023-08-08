@@ -1,0 +1,4 @@
+.admin-table tbody td {
+  border-bottom: 1px solid #dddddd;
+  padding: 1em;
+}

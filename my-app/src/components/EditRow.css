@@ -1,0 +1,30 @@
+button {
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.add-button {
+  background-color: green;
+  color: white;
+}
+
+button.cancel-button {
+  background-color: red;
+  color: white;
+}
+
+button + button {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

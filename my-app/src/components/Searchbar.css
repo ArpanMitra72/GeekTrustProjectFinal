@@ -1,0 +1,19 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  overflow: auto;
+}
+
+.search-desktop {
+  width: 100%;
+  height: 2.5rem;
+}
+
+@media (max-width: 536px) {
+  .search-desktop {
+    width: 100%;
+    min-width: initial;
+  }
+}

@@ -1,0 +1,19 @@
+.admin-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.admin-table th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 1em;
+}
+
+.admin-table thead th {
+  background-color: white;
+}
+
+.admin-table input[type="checkbox"] {
+  margin-right: 0.5em;
+  vertical-align: middle;
+}

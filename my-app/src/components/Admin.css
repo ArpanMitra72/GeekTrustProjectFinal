@@ -1,0 +1,90 @@
+.bottom-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.delete-selected-button {
+  width: 170px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  bottom: 1rem;
+  left: 1rem;
+  margin-right: 10px;
+  margin-top: 1.5rem;
+}
+
+.pagination-wrapper {
+  flex-grow: 1; /* Allow the pagination wrapper to take all available space */
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pagination-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(46, 170, 247);
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0 1rem;
+}
+
+.pagination-button.active[disabled] {
+  cursor: not-allowed;
+  background-color: white;
+  color: rgb(46, 170, 247);
+  border: 1px solid rgb(46, 170, 247);
+}
+
+.pagination-button[disabled] {
+  cursor: not-allowed;
+  background-color: rgb(235, 234, 234);
+  color: rgb(133, 133, 133);
+  border: 1px solid rgb(133, 133, 133);
+}
+
+.pagination-button.prev-next {
+  transform: scale(1.1); /* Adjust the scale factor to change the size */
+}
+
+@media screen and (max-width: 767px) {
+  .bottom-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .delete-selected-button {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .pagination-container {
+    flex-wrap: wrap;
+  }
+  .pagination-button {
+    margin: 0.5rem;
+  }
+}
+
+tr.selected-row {
+  background-color: #c3bebe;
+}
